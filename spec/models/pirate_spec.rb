@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Pirate, type: :model do
   describe 'relationships' do
-    let(:island) { Island.create(number: 1, date: '1/11/99') }
-    let(:pirate) { Pirate.create(name: 'Bruce McCulloch', occupation: 'actor') }
+    let(:pirate) { Pirate.create(name: "Greenbeard", age: 45) }
+    let(:island) { Island.create(name: 'Trinidad') }
 
     it 'can access the associated treasures' do
       treasure =
