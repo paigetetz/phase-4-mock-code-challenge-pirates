@@ -19,13 +19,13 @@ treasures = ["Spanish gold", "Aztec jewels", "Cursed silver", "Smelly old socks"
 
 puts "Seeding pirates..."
 pirates.each do |p|
-  puts "#{p.name}..."
+  puts "#{p[:name]}..."
   Pirate.create!(p)
 end
 
 puts "Seeding islands..."
 islands.each do |i|
-  puts "#{i.name}..."
+  puts "#{i[:name]}..."
   Island.create!(i)
 end
 
