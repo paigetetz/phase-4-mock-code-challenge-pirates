@@ -7,13 +7,13 @@ RSpec.describe Pirate, type: :model do
 
     it 'can access the associated treasures' do
       treasure =
-        Treasure.create(guest_id: pirate.id, island_id: island.id, content: "Gold")
+        Treasure.create(pirate_id: pirate.id, island_id: island.id, content: "Gold")
 
       expect(pirate.treasures).to include(treasure)
     end
 
     it 'can access the associated islands' do
-      Treasure.create(guest_id: pirate.id, island_id: island.id, content: "Gold")
+      Treasure.create(pirate_id: pirate.id, island_id: island.id, content: "Gold")
 
       expect(pirate.islands).to include(island)
     end

@@ -92,7 +92,7 @@ RSpec.describe 'pirates', type: :request do
         ).by(-1)
       end
 
-      it 'deletes the associated appearances' do
+      it 'deletes the associated treasures' do
         expect { delete "/pirates/#{Pirate.first.id}" }.to change(
           Treasure,
           :count,
