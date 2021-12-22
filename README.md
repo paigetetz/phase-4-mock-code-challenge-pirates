@@ -15,7 +15,6 @@ To download the dependencies for the frontend and backend, run:
 
 ```sh
 bundle install
-npm install --prefix client
 ```
 
 There is some starter code in the `db/seeds.rb` file so that once you've
@@ -28,18 +27,9 @@ running:
 rails s
 ```
 
-You can run your React app on [`localhost:4000`](http://localhost:4000) by
-running:
+There is no React front-end for this challenge.
 
-```sh
-npm start --prefix client
-```
-
-You are not being assessed on React, and you don't have to update any of the
-React code; the frontend code is available just so that you can test out the
-behavior of your API in a realistic setting.
-
-There are also tests included which you can run using `rspec` to check your
+There are tests included which you can run using `rspec` to check your
 work.
 
 Depending on your preference, you can either check your progress by:
