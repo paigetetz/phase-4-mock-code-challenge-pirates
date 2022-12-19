@@ -1,8 +1,5 @@
 class TreasuresController < ApplicationController
 
-    def index
-        render json: Treasure.all
-    end
 
     def create
         treasure = Treasure.create(treasure_params)
